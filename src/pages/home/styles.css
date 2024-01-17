@@ -1,9 +1,58 @@
-h1{
+header{
+    padding: 2rem;
+    background-color: #008080;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.sidenav{
+    width: 220px;
+    background-color: #008080;
+    position: absolute;
+    height: 95vh;
+    padding: 0 1rem;
+    transition: all 1s;
+}
+
+.icon{
+    width: 50px;
+    margin-left: 6px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.menu{
+    padding: 0;
+}
+
+.menu, .options{
+    list-style-type: none;
+}
+
+.menu, .options, a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 10px 8px;
+    border-radius: 6px;
+}
+
+.menu .options a:hover,
+.menu .options a.active{
+    background: darkcyan;
+}
+
+
+
+h2{
     text-align: center;
     margin: 4rem 0;
 }
 
-ul{
+.list-movies{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -11,7 +60,7 @@ ul{
     row-gap: 4rem;
 }
 
-li{
+.itens{
     display: flex;
     flex-direction: column;
     align-items: center;
