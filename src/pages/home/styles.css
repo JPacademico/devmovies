@@ -7,6 +7,10 @@ header{
     
 }
 
+strong{
+    color: gold;
+}
+
 .sidenav{
     width: 220px;
     background-color: #008080;

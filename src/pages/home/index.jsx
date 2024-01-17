@@ -13,7 +13,16 @@ function Home(){
 
     return(
         <div className="main">
-            <header>Cabeçalho</header>
+            <header>
+                <h1><strong>Moon</strong>Vies <img src="" alt="" /></h1>
+                <div>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                <img src="" alt="" />
+
+            </header>
             <h2>Popular</h2>
             <ul className='list-movies'>
                 {movies.map(movie => {
