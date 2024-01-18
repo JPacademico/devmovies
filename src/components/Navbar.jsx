@@ -1,9 +1,9 @@
-import movie from './movie.svg'
+
 
 const Navbar = () => {
     return(
         <div className="sidenav">
-            <img className='icon' src={movie} alt="" />
+            <img className='icon' src="" alt="" />
             <ul className="menu">
                 <li className="options">
                     <a href="">Home</a>

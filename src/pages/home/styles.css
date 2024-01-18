@@ -4,14 +4,37 @@ header{
     height: 36px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
+}
+
+h1{
+    display: flex;
+    align-items: center;
 }
 
 strong{
     color: gold;
 }
 
-.sidenav{
+.logo{
+    width: 20px;
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.search-btn{
+    width: 22px;
+    margin-left: 8px;
+    margin-bottom: 2px;
+    
+}
+
+/* .sidenav{
     width: 220px;
     background-color: #008080;
     position: absolute;
@@ -47,7 +70,7 @@ strong{
 .menu .options a:hover,
 .menu .options a.active{
     background: darkcyan;
-}
+} */
 
 
 
@@ -62,6 +85,7 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 3rem;
     row-gap: 4rem;
+    padding: 1rem;
 }
 
 .itens{
@@ -70,7 +94,7 @@ h2{
     align-items: center;
 }
 
-img{
+.poster{
     width: 180px;
     border-radius: 1rem;
     margin-bottom: 1.5rem;

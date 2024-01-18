@@ -3,6 +3,11 @@
     align-items: center;
     justify-content: center;
     padding: 4rem 0;
+    background-color: #0080803b;
+    border-radius: 8rem;
+    border: solid 1px #00808065;
+    margin: 3rem;
+
 }
 
 .titulo{
@@ -21,6 +26,7 @@
     width: 300px;
     border-radius: 1rem;
     font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
 }
 
@@ -56,6 +62,15 @@ p{
 }
 
 .data{
-    opacity: 0.7;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
 
+}
+
+.estrela{
+    width: 18px;
+    margin-bottom: 5px;
+    margin-left: 1rem;
+    margin-right: 4px;
 }
