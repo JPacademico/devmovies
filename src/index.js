@@ -4,6 +4,8 @@ import './global.css';
 import Home from './pages/home';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Details from './pages/Details';
+import TopRated from './pages/top';
+import Search from './pages/search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +13,8 @@ root.render(
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/details/:id' element={<Details/>}/>
+      <Route path='/top_rated' element={<TopRated/>} />
+      <Route path='search' element={<Search/>} />
     </Routes>
   </BrowserRouter>
 );

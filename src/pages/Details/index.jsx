@@ -32,7 +32,7 @@ function Details() {
                 <h1 className='titulo'>{movie.title}</h1>
                 <p>{movie.sinopse}</p>
                 <span className='data'>{movie.releaseDate} <img className='estrela' src={star} alt="" /><strong className='vote'>{movie.nota}</strong> </span>
-                <Link to="/"><button>Voltar</button></Link>
+                <Link to="/"><button>Home</button></Link>
                 
             </div>
         </div>

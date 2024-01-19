@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react';
-import './styles.css'
+import './style.css'
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import moon from '../assets/moon.svg'
 import lupa from '../assets/lupa.svg'
 
-function Home(){
+function TopRated(){
     const[movies, setMovies] = useState([])
     const image_path = 'http://image.tmdb.org/t/p/w500'
     const [search, setSearch] = useState("")
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=393827e7aff814d61b60518aa2791c92`).then(response => response.json()).then(data => setMovies(data.results))
+        fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=393827e7aff814d61b60518aa2791c92`).then(response => response.json()).then(data => setMovies(data.results))
     }, [])
 
     const handleSubmit = (e) => {
@@ -37,7 +37,7 @@ function Home(){
                 </form>
 
             </header>
-            <h2>Top <strong>20</strong> Popular</h2>
+            <h2>Top <strong>20</strong> Best Rated</h2>
             <ul className='list-movies'>
                 {movies.map(movie => {
                     return (
@@ -53,4 +53,4 @@ function Home(){
     )
 }
 
-export default Home;
+export default TopRated;
